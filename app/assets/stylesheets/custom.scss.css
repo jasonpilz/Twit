@@ -1,0 +1,39 @@
+
+p {
+  font-family: HelveticaNeue-UltraLight, 'Helvetica Neue UltraLight', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  letter-spacing: 2px;
+  color: white;
+}
+
+.greeting {
+  font-family: HelveticaNeue-UltraLight, 'Helvetica Neue UltraLight', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-size: 10rem;
+  font-weight: 100;
+  letter-spacing: 1px;
+  color: white;
+}
+
+.nav-logo {
+  font-family: HelveticaNeue-UltraLight, 'Helvetica Neue UltraLight', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  font-weight: 100;
+  letter-spacing: 1px;
+  color: #55acee;
+}
+
+
+.centered {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.semi-transparent {
+  opacity: 0.2;
+}
+
+.gradient {
+  background: #00d2ff; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #00d2ff , #3a7bd5); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #00d2ff , #3a7bd5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}

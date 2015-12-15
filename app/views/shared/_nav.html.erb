@@ -1,0 +1,9 @@
+<div class="ui top fixed menu">
+  <div class="item">
+    <h1 class="nav-logo">Twit</h1>
+  </div>
+  <%# <a class="item">Testimonials</a> %>
+  <% if current_user %>
+    <a href="<%= logout_path %>" class="item">Logout</a>
+  <% end %>
+</div>
