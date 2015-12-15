@@ -1,8 +1,17 @@
-<h1>Welcome</h1>
+<body class="gradient" />
 
-<% if current_user %>
-  </p>Hello, <%= current_user.name %></p>
-  <%= link_to "Logout", logout_path %>
-<% else %>
-  <%= link_to "Login", login_path %>
-<% end %>
+<div class="ui container center aligned centered">
+  <h1 class="greeting">Twit</h1>
+  <% if current_user %>
+    </p>Hello, <%= current_user.name %></p>
+    <%= link_to "Logout", logout_path %>
+  <% else %>
+    <p>Login with</p>
+    <a href="<%= login_path %>">
+      <button class="ui twitter button">
+        <i class="twitter icon"></i>
+        Twitter
+      </button>
+    </a>
+  <% end %>
+</div>
