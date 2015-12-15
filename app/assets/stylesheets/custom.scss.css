@@ -5,6 +5,12 @@ p {
   color: white;
 }
 
+/* .screen-name { */
+/*   font-weight: 100; */
+/*   color: black; */
+/*   font-size: 0.8rem; */
+/* } */
+
 .greeting {
   font-family: HelveticaNeue-UltraLight, 'Helvetica Neue UltraLight', 'Helvetica Neue', Arial, Helvetica, sans-serif;
   font-size: 10rem;
@@ -14,13 +20,16 @@ p {
 }
 
 .nav-logo {
-  font-family: HelveticaNeue-UltraLight, 'Helvetica Neue UltraLight', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
   font-size: 2rem;
-  font-weight: 100;
+  font-weight: 200;
   letter-spacing: 1px;
   color: #55acee;
 }
 
+/* .feed { */
+/*   border-top: 1px solid #eaeaea; */
+/* } */
 
 .centered {
   position: relative;
@@ -28,8 +37,16 @@ p {
   transform: translateY(-50%);
 }
 
+.ui.text.container {
+  margin-top: 4.5em;
+}
+
 .semi-transparent {
-  opacity: 0.2;
+  opacity: 0.4;
+}
+
+.home-bground {
+  background-color: #e1e8ed;
 }
 
 .gradient {
@@ -37,3 +54,9 @@ p {
   background: -webkit-linear-gradient(to left, #00d2ff , #3a7bd5); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to left, #00d2ff , #3a7bd5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
+
+/* .event { */
+/*   border-top: 1px solid #eaeaea; */
+/*   border-bottom: 1px solid #eaeaea; */
+/* } */
+
