@@ -1,6 +1,9 @@
 source 'https://rubygems.org'
 
 
+gem 'omniauth-twitter'
+gem 'figaro'
+gem 'database_cleaner'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.4'
 # Use postgresql as the database for Active Record
@@ -35,6 +38,13 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
+  gem 'capybara'
+  gem 'simplecov'
+  gem 'pry'
+  gem 'launchy'
+  gem 'mocha'
+  gem 'shoulda'
+  gem 'thin'
 end
 
 group :development do

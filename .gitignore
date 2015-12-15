@@ -11,3 +11,9 @@
 /log/*
 !/log/.keep
 /tmp
+
+# Ignore coverage
+/coverage
+
+# Ignore application configuration
+/config/application.yml
