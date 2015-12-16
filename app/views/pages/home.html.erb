@@ -1,30 +1,16 @@
 <body class="home-bground" />
 <%= render partial: '/shared/nav' %>
 
-<div class="ui text container segment">
-  <div class="ui feed">
-    <% @tweets.each do |tweet| %>
-        <div class="event">
-          <div class="label">
-            <img src="<%= tweet.user.profile_image_url %>">
-          </div>
-          <div class="content">
-            <div class="summary">
-              <a><%= tweet.user.name %></a> @<%= tweet.user.screen_name %>
-              <div class="date">
-                | <%= time_ago_in_words(tweet.created_at) %> ago
-              </div>
-            </div>
-            <div class="extra text">
-              <p><%= tweet.text %></p>
-            </div>
-            <div class="ui rating" data-max-rating="1">
-              <%# <a class="like"> %>
-              <%#   <i class="like icon"></i> 5 Likes %>
-              <%# </a> %>
-            </div>
-          </div>
-        </div>
-    <% end %>
+<div class="ui grid">
+  <div class="row">
+    <div class="four wide column">
+      <%= render partial: "shared/user_card", locals: {user: @user} %>
+    </div>
+    <div class="eight wide column">
+      <%= render partial: "shared/tweet_feed", locals: {tweets: @tweets} %>
+    </div>
+    <div class="four wide column">
+    </div>
   </div>
 </div>
+

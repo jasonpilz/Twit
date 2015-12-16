@@ -5,7 +5,7 @@ class UserLogsInWithTwitterTest < ActionDispatch::IntegrationTest
     visit "/"
     assert_equal 200, page.status_code
     click_button "twitter-login"
-    visit "/JasonPilz"
+    save_and_open_page
     assert_equal "/JasonPilz", current_path
     assert page.has_link?("Logout")
     assert page.has_content?("Jason")
