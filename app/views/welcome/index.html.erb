@@ -4,11 +4,13 @@
   <h1 class="greeting">Twit</h1>
   <% if current_user %>
     </p>Hello, <%= current_user.name %></p>
-    <%= link_to "Logout", logout_path %>
+    <a href="<%= logout_path %>"
+      <button class="ui inverted button">Logout</button>
+    </a>
   <% else %>
-    <p>Login with</p>
+    <p class="login-with">Login with</p>
     <a href="<%= login_path %>">
-      <button class="ui twitter button">
+      <button class="ui twitter button" id="twitter-login">
         <i class="twitter icon"></i>
         Twitter
       </button>

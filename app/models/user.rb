@@ -1,4 +1,5 @@
 class User < ActiveRecord::Base
+  has_many :tweets
 
   def self.from_omniauth(auth_info)
     where(uid: auth_info[:uid]).first_or_create do |new_user|
@@ -9,4 +10,14 @@ class User < ActiveRecord::Base
       new_user.oauth_token_secret = auth_info.credentials.secret
     end
   end
+
+  def twitter
+    @client ||= Twitter::REST::Client.new do |config|
+      config.consumer_key        = ENV['CONSUMER_API_KEY']
+      config.consumer_secret     = ENV['CONSUMER_API_SECRET']
+      config.access_token        = oauth_token
+      config.access_token_secret = oauth_token_secret
+    end
+  end
+
 end
