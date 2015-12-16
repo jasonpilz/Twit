@@ -4,9 +4,15 @@
   <h1 class="greeting">Twit</h1>
   <% if current_user %>
     </p>Hello, <%= current_user.name %></p>
-    <a href="<%= logout_path %>"
-      <button class="ui inverted button">Logout</button>
-    </a>
+    <div class="ui buttons">
+      <a href="<%= logout_path %>">
+        <button class="ui inverted button">Logout</button>
+      </a>
+      <div class="or"></div>
+      <a href="/<%= current_user.screen_name %>">
+        <button class="ui blue button">Home</button>
+      </a>
+    </div>
   <% else %>
     <p class="login-with">Login with</p>
     <a href="<%= login_path %>">
