@@ -1,9 +1,9 @@
 source 'https://rubygems.org'
 
-
 gem 'omniauth-twitter'
 gem 'figaro'
 gem 'database_cleaner'
+gem 'twitter'
 
 gem 'less-rails-semantic_ui'
 gem 'autoprefixer-rails'

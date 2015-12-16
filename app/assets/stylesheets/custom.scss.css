@@ -1,5 +1,5 @@
 
-p {
+.login-with {
   font-family: HelveticaNeue-UltraLight, 'Helvetica Neue UltraLight', 'Helvetica Neue', Arial, Helvetica, sans-serif;
   letter-spacing: 2px;
   color: white;
@@ -39,6 +39,7 @@ p {
 
 .ui.text.container {
   margin-top: 4.5em;
+  max-width: 600px !important;
 }
 
 .semi-transparent {
