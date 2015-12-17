@@ -1,6 +1,6 @@
 <div class="ui card">
   <div class="content">
-    <%= form_tag tweet_path, method: :post  %>
+    <%= form_tag tweet_path, method: :post, class: "field"  %>
       <%= label_tag "Tweet" %>
       <%= text_field_tag "tweet[body]" %>
   </div>

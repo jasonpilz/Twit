@@ -1,15 +1,8 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  name: MyString
-  screen_name: MyString
-  uid: MyString
-  oauth_token: MyString
-  oauth_token_secret: MyString
-
-two:
-  name: MyString
-  screen_name: MyString
-  uid: MyString
-  oauth_token: MyString
-  oauth_token_secret: MyString
+jason:
+  name: "Jason Michael Pilz"
+  screen_name: "jaspil_dev"
+  uid: 4579816278
+  oauth_token: <%= ENV['TEST_TOKEN'] %>
+  oauth_token_secret: <%= ENV['TEST_SECRET'] %>
