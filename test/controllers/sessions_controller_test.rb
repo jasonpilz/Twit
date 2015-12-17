@@ -1,7 +1,8 @@
 require 'test_helper'
 
 class SessionsControllerTest < ActionController::TestCase
-  # test "the truth" do
-  #   assert true
+  # test "should get create" do
+  #   get :create
+  #   assert_response :success
   # end
 end
