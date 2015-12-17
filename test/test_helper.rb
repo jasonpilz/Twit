@@ -8,7 +8,7 @@ require 'minitest/pride'
 require 'webmock'
 require 'vcr'
 
-SimpleCov.start
+SimpleCov.start("rails")
 
 class ActiveSupport::TestCase
   # Setup all fixtures in test/fixtures/*.yml for all tests in alphabetical order.
