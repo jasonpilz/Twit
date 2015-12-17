@@ -18,7 +18,7 @@ class TwitterServiceTest < ActiveSupport::TestCase
 
   test "#post_tweet" do
     VCR.use_cassette("twitter_service#post_tweet") do
-      tweet_text = "Tweet is up"
+      tweet_text = "test tweet"
       posted_tweet = client.post_tweet(tweet_text)
 
       assert posted_tweet.created?
@@ -33,7 +33,7 @@ class TwitterServiceTest < ActiveSupport::TestCase
       tweets = client.tweets
 
       assert_equal 20, tweets.count
-      assert_equal "Tweet is up", tweets.first.text
+      assert_equal "test tweet", tweets.first.text
     end
   end
 
