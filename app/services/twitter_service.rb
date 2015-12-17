@@ -17,4 +17,8 @@ class TwitterService
   def tweets
     client.home_timeline
   end
+
+  def post_tweet(message)
+    client.update(message)
+  end
 end
