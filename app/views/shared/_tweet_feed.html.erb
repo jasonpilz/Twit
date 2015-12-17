@@ -15,10 +15,10 @@
             <div class="extra text">
               <p><%= tweet.text %></p>
             </div>
-            <div class="ui rating" data-max-rating="1">
-              <a class="like">
-                <i class="like icon"></i> 5 Likes
-              </a>
+            <div class="meta">
+              <%= link_to tweet_path(tweet.id), class: "like", method: :patch do  %>
+                <i class="like icon"></i> <%= tweet.favorite_count %> Likes
+              <% end %>
             </div>
           </div>
         </div>

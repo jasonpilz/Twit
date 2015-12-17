@@ -21,4 +21,8 @@ class TwitterService
   def post_tweet(message)
     client.update(message)
   end
+
+  def favorite_tweet(tweet_id)
+    client.favorite(tweet_id.to_i)
+  end
 end

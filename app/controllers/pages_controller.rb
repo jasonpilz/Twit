@@ -6,8 +6,12 @@ class PagesController < ApplicationController
   end
 
   def create
-    binding.pry
     build_service.post_tweet(params[:tweet][:body])
+    redirect_to :back
+  end
+
+  def update
+    build_service.favorite_tweet(params[:format])
     redirect_to :back
   end
 
