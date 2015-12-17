@@ -1,15 +1,17 @@
 <body class="home-bground" />
 <%= render partial: '/shared/nav' %>
 
-<div class="ui grid">
-  <div class="row">
-    <div class="four wide column">
-      <%= render partial: "shared/user_card", locals: {user: @user} %>
-    </div>
-    <div class="eight wide column">
-      <%= render partial: "shared/tweet_feed", locals: {tweets: @tweets} %>
-    </div>
-    <div class="four wide column">
+<div ="ui container" id="main-body">
+  <div class="ui grid">
+    <div class="row">
+      <div class="four wide column">
+        <%= render partial: "shared/user_card", locals: {user: @user} %>
+      </div>
+      <div class="eight wide column">
+        <%= render partial: "shared/tweet_feed", locals: {tweets: @tweets} %>
+      </div>
+      <div class="four wide column">
+      </div>
     </div>
   </div>
 </div>
