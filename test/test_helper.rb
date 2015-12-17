@@ -52,8 +52,8 @@ class ActionDispatch::IntegrationTest
   end
 
   def login_user
-    visit root_path
-    click_button("Twitter")
+    visit "/"
+    click_link("Twitter")
   end
 end
 
