@@ -12,8 +12,6 @@ class TwitterServiceTest < ActiveSupport::TestCase
       user = client.user
 
       assert_equal "jaspil_dev", user.screen_name
-      # assert_equal true, user.default_profile
-      # assert_equal false, user.default_profile_image
       assert_equal "Jason Michael Pilz", user.name
     end
   end

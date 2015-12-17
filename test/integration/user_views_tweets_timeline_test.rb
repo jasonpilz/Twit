@@ -7,5 +7,6 @@ class UserViewsTweetsTimelineTest < ActionDispatch::IntegrationTest
   end
 
   test "user can view history tweet activity feed" do
+    skip
   end
 end
