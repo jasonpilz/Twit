@@ -33,7 +33,7 @@ class ActionDispatch::IntegrationTest
         raw_info: {
           user_id: "1234",
           name: "Jason",
-          screen_name: "JasonPilz",
+          screen_name: "jaspil_dev",
         }
       },
       credentials: {

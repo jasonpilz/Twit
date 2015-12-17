@@ -1,3 +1,7 @@
+img {
+  max-width: 80px;
+  max-height: 80px;
+}
 
 .event {
   border-bottom: 1px solid #eaeaea;
@@ -36,7 +40,7 @@
 }
 
 #main-body {
-  margin-top: 2.5em;
+  margin-top: 5.2em;
   margin-left: 1em;
 }
 
